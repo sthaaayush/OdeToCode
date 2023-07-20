@@ -2,7 +2,7 @@
 
 ## 2. Description:
 
-"Going Green" aims to build, grow, and promote more greenhouse products while providing essential information, training, and services related to greenhouse farming. Our website, [ggagro.com](https://www.ggagro.com), will serve as a prime information platform, catering to normal viewers, aspiring greenhouse business owners, and existing businesses looking to expand. We also offer timely maintenance services to existing greenhouse businesses.
+"Going Green" aims to build, grow, and promote more greenhouse products while providing essential information, training, and services related to greenhouse farming. Our website will serve as a prime information platform, catering to normal viewers, aspiring greenhouse business owners, and existing businesses looking to expand. We also offer timely maintenance services to existing greenhouse businesses.
 
 The website will feature sections about our business, contact details, services, educational/training resources, and separate login/registration portals for Greenhouse Owners and Normal Users/Customers.
 
