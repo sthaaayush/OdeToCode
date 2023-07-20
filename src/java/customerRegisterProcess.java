@@ -71,7 +71,7 @@ public class customerRegisterProcess extends HttpServlet {
                     }
                 } else {
                     request.setAttribute("errorMessage", "Invalid Phone Number");//included error message
-                    RequestDispatcher rd = request.getRequestDispatcher("ownerRegisterPage.jsp");//redirected back to login page
+                    RequestDispatcher rd = request.getRequestDispatcher("customerRegisterPage.jsp");//redirected back to login page
                     rd.include(request, response);//including error message
                 }
             } else {

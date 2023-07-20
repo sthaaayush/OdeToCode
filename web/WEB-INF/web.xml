@@ -61,7 +61,7 @@
         <servlet-name>customerreg</servlet-name>
         <url-pattern>/customerRegMap</url-pattern>
     </servlet-mapping>
-        <servlet>
+    <servlet>
         <servlet-name>maintainenceProcess</servlet-name>
         <servlet-class>maintainenceProcess</servlet-class>
     </servlet>
