@@ -18,7 +18,6 @@ body{
 #nav{
     height: 20%;
     width: 100%;
-    /* background-color: rgba(150, 193, 30, 0.3); */
     display: flex;
     align-items: center;
     padding: 0 120px;
@@ -56,7 +55,6 @@ video{
 #first_body1{
     height: 100vh;
     width: 100%;
-    /* background-color: red; */
      display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +133,6 @@ video{
 .login{
     height: 1000px;
     width: 100%;
-    /* background: radial-gradient(#b1d15bdf, #c6d699df ); */
     position: relative;
 }
 
@@ -146,7 +143,6 @@ video{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background: radial-gradient(#b1d15bdf, #c6d699df ); */
     background: transparent;
     border-radius: 10px;
     box-shadow: 1px 4px 22px -8px #0004;
@@ -201,13 +197,9 @@ video{
       font-weight: 600;
       font-size: 14px;
       color: #fff;
-
 }
 
-label{
-    color: #fff;
 
-}
 
 .left{
     background: linear-gradient(-45deg, #9b9f9cdf, #9b9f9cdf );
@@ -219,7 +211,7 @@ label{
     border-radius: 8px;
     display: block;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 100px;
     background: #428e47df;
     color: #fff;
     font-weight: bold;
@@ -253,7 +245,6 @@ label{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background: radial-gradient(#b1d15bdf, #c6d699df ); */
     background: transparent;
     border-radius: 10px;
     box-shadow: 1px 4px 22px -8px #0004;
@@ -291,7 +282,8 @@ label{
 
 .login-box-RC .left h3{
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 70px;
     color: #fff;
 
   }
@@ -326,7 +318,7 @@ label{
     border-radius: 8px;
     display: block;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 50px;
     background: #428e47df;
     color: #fff;
     font-weight: bold;
@@ -344,9 +336,57 @@ label{
 	
 }
 
-.errorMsg{
-    color: red;
-    display: flex;
-    justify-content: center;
+.main-box{
+    height: 1000px;
+    width: 100%;
+    position: relative;
 }
+
+.user-box{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(#565756df, #565756df ); 
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+
+#image{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+
+#choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+a h4:hover{
+    color: black;
+    font-weight: 4px;
+}
+a{
+    text-decoration: none;
+}
+
 

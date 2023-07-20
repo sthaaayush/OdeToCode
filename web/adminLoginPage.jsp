@@ -7,11 +7,11 @@
     <body>
         <div id="nav">
             <img src="logo.png" title="logo" alt="image not available"/>
-            <h4>HOME</h4>
-            <h4>SERVICES</h4>
-            <h4>CONTACT</h4>
-            <h4>LOGIN</h4>
-            <h4>SIGN UP</h4>
+            <a href="home.html"><h4>HOME</h4></a>
+            <a href="home.html"><h4>SERVICES</h4></a>
+            <a href="home.html"><h4>CONTACT</h4></a>
+            <a href="accesslog.html"><h4>LOGIN</h4></a>
+            <a href="accessRegister.html"><h4>SIGN UP</h4></a>
         </div>
 
         <video autoplay loop muted src="video_bg.mp4" ></video>
@@ -38,7 +38,7 @@
                                 <label class="errorMsg">
                                     <%
                                         if (request.getMethod().equalsIgnoreCase("post")) {
-                                            out.write("*"+(String) request.getAttribute("errorMessage")+"*");
+                                            out.write("*" + (String) request.getAttribute("errorMessage") + "*");
                                         }
                                     %>
                                 </label>
