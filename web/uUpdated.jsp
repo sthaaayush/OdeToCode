@@ -10,7 +10,6 @@
 <body>
     <h1>Update User Data</h1>
 
-    <%-- Retrieve the form data submitted --%>
     <% String cFname = request.getParameter("cFname");
        String cLname = request.getParameter("cLname");
        String cPhoneNumber = request.getParameter("cPhoneNumber");
@@ -34,13 +33,13 @@
            pst.setString(6, cState);
            pst.setInt(7, customerId);
 
-           int rowsUpdated = pst.executeUpdate();
+           int rowsUpdated = pst.executeUpdate();         
 
            if (rowsUpdated > 0) {
-               out.print("User data updated successfully!");
-           } else {
-               out.print("Failed to update user data!");
-           }
+            out.print("User data updated successfully!");
+        } else {
+            out.print("Failed to update user data!");
+        }
 
            con.close();
        } catch (SQLException | ClassNotFoundException ex) {
