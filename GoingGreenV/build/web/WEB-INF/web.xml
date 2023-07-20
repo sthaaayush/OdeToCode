@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>ownerlog</servlet-name>
+        <servlet-class>ownerLoginProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ownerlog</servlet-name>
+        <url-pattern>/ownerLogMap</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ownerreg</servlet-name>
+        <servlet-class>ownerRegisterProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ownerreg</servlet-name>
+        <url-pattern>/ownerRegMap</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>adminlog</servlet-name>
+        <servlet-class>adminLoginProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminlog</servlet-name>
+        <url-pattern>/adminLogMap</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>adminreg</servlet-name>
+        <servlet-class>adminRegisterProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminreg</servlet-name>
+        <url-pattern>/adminRegMap</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>customerlog</servlet-name>
+        <servlet-class>customerLoginProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customerlog</servlet-name>
+        <url-pattern>/customerLogMap</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>customerreg</servlet-name>
+        <servlet-class>customerRegisterProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customerreg</servlet-name>
+        <url-pattern>/customerRegMap</url-pattern>
+    </servlet-mapping>
+</web-app>
