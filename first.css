@@ -345,3 +345,52 @@ label{
 	
 }
 
+.main-box{
+    height: 1000px;
+    width: 100%;
+    /* background: radial-gradient(#b1d15bdf, #c6d699df ); */
+    position: relative;
+}
+
+.user-box{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(#565756df, #565756df ); 
+    
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+
+#image{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+
+#choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
