@@ -37,7 +37,7 @@ public class customerLoginProcess extends HttpServlet {
                     }
                 }
                 if (flag == 1) {
-                    RequestDispatcher rd = request.getRequestDispatcher("consumerDashboard.jsp");//redirected to main page
+                    RequestDispatcher rd = request.getRequestDispatcher("customerDashboard.jsp");//redirected to main page
                     rd.include(request, response);
                 } else {
                     request.setAttribute("errorMessage", "Email or Password is Incorrect");//included error message

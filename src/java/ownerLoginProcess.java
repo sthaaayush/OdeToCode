@@ -19,10 +19,11 @@ public class ownerLoginProcess extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
-            HttpSession ownerSession=request.getSession(false);
+            
             //Receving data from requested webpage to compare with database information
             String email = request.getParameter("mail");
             String ePass = request.getParameter("pass");
+            out.write(email);
             try {
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost/logdetails", "root", "");
@@ -39,8 +40,9 @@ public class ownerLoginProcess extends HttpServlet {
                     }
                 }
                 if (flag == 1) {
-                    ownerSession.setAttribute("id", rs.getString("id"));
-                    RequestDispatcher rd = request.getRequestDispatcher("ownerDashbord.jsp");//redirected to main page
+                    request.setAttribute("id", rs.getString("id"));
+                    RequestDispatcher rd = request.getRequestDispatcher("ownerDashboard2.jsp");//redirected to main page
+                    rd.forward(request, response);
                 } else {
                     request.setAttribute("errorMessage", "Email or Password is Incorrect");//included error message
                     RequestDispatcher rd = request.getRequestDispatcher("ownerLoginPage.jsp");//redirected back to login page

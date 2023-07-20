@@ -61,4 +61,14 @@
         <servlet-name>customerreg</servlet-name>
         <url-pattern>/customerRegMap</url-pattern>
     </servlet-mapping>
+        <servlet>
+        <servlet-name>maintainenceProcess</servlet-name>
+        <servlet-class>maintainenceProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>maintainenceProcess</servlet-name>
+        <url-pattern>/maintainS</url-pattern>
+    </servlet-mapping>
+    
+    
 </web-app>
