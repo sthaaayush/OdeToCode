@@ -33,6 +33,7 @@ public class customerLoginProcess extends HttpServlet {
                 while (rs.next()) {
                     if (email.equals(rs.getString("cEmail")) && ePass.equals(rs.getString("cPass"))) {
                         flag = 1;//valid information
+                        break;
                     } else {
                         flag = 0;//invalid information
                     }

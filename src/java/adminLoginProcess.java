@@ -37,7 +37,9 @@ public class adminLoginProcess extends HttpServlet {
                     }
                 }
                 if (flag == 1) {
-                    RequestDispatcher rd = request.getRequestDispatcher("adminDashbord.jsp");//redirected to main page
+                    out.write("hello world");
+                    RequestDispatcher rd = request.getRequestDispatcher("adminDashboard.jsp");//redirected to main page
+                    rd.forward(request, response);
                 } else {
                     request.setAttribute("errorMessage", "Email or Password is Incorrect");//included error message
                     RequestDispatcher rd = request.getRequestDispatcher("adminLoginPage.jsp");//redirected back to login page

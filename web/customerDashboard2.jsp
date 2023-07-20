@@ -22,7 +22,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h3>Greenhouse Business Directory</h3> 
-                    
+
                 </div>
                 <div class="card-body">
                     <p>Users can access a comprehensive directory of greenhouse businesses in their area.</p>
@@ -47,6 +47,7 @@
                         </a>
                         <%
                                 }
+                                con.close();
                             } catch (Exception e) {
                                 out.write("Exception caught: " + e.getMessage());
                             }
