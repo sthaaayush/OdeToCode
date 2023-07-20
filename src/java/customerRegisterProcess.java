@@ -43,7 +43,8 @@ public class customerRegisterProcess extends HttpServlet {
             String cCity = request.getParameter("cCity");
             String cState = request.getParameter("cState");
             String cPass = request.getParameter("cPass");
-            String confirmPass = request.getParameter("confirmPass");
+            String confirmPass = request.getParameter("ConfirmPass");
+            out.write(cFname);
             if (confirmPass.equals(cPass)) {
                 if (cPhoneNumber.length() == 10) {
                     //Store all the received information to database table owner
