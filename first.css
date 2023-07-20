@@ -360,7 +360,6 @@ label{
     left: 60%;
     transform: translate(-50%, -50%);
     background: radial-gradient(#565756df, #565756df ); 
-    
     border-radius: 10px;
     box-shadow: 1px 4px 22px -8px #0004;
     display: flex;
