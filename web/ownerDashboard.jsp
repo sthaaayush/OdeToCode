@@ -86,9 +86,14 @@
                 width: 40%;
                 padding: 20px;
                 margin-left: 30em;
+                margin-bottom: 10em;
             }
             input{
                 height: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
             }
         </style>
     </head>
@@ -99,8 +104,6 @@
         <div id="nav">
             <img src="logo.png" title="logo" alt="image not available"/>
             <a href="home.html"><h4>HOME</h4></a>
-            <a href="home.html"><h4>SERVICES</h4></a>
-            <a href="home.html"><h4>CONTACT</h4></a>
             <a href="home.html"><h4>LOGOUT</h4></a>
         </div>
         <br>

@@ -69,7 +69,7 @@
             <div class="info-label">User Ratings:</div><br>
             <div>Overall Rating: 4.5/5</div>
             <br>
-            <a href="p2editOwnerDashboard.jsp" class="edit-btn">Edit</a>
+            <a href="ownerDashboard.jsp" class="edit-btn">Edit</a>
         </div>
     </body>
 </html>

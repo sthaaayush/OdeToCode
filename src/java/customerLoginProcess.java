@@ -21,13 +21,14 @@ public class customerLoginProcess extends HttpServlet {
             //Receving data from requested webpage to compare with database information
             String email = request.getParameter("cEmail");
             String ePass = request.getParameter("cPass");
-            out.write(email);
+            
             try {
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost/logdetails", "root", "");
                 String loginVerifySql = "SELECT * FROM customer;";
                 PreparedStatement stm = con.prepareStatement(loginVerifySql);
                 ResultSet rs = stm.executeQuery();
+                out.write(email);
                 int flag = 0; //this flag is to check all the combination of password and email with user information
                 while (rs.next()) {
                     if (email.equals(rs.getString("cEmail")) && ePass.equals(rs.getString("cPass"))) {
@@ -37,7 +38,7 @@ public class customerLoginProcess extends HttpServlet {
                     }
                 }
                 if (flag == 1) {
-                    RequestDispatcher rd = request.getRequestDispatcher("customerDashboard.jsp");//redirected to main page
+                    RequestDispatcher rd = request.getRequestDispatcher("customerDashboard.html");//redirected to main page
                     rd.include(request, response);
                 } else {
                     request.setAttribute("errorMessage", "Email or Password is Incorrect");//included error message
