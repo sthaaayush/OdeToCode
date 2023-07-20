@@ -13,6 +13,8 @@
                 background-size: cover;
                 font-family: monospace;
             }
+            
+          
         </style>
     </head>
     <body>
@@ -23,7 +25,7 @@
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h3>Greenhouse Business Directory</h3> 
 
-                </div>
+                 </div>
                 <div class="card-body">
                     <p>Users can access a comprehensive directory of greenhouse businesses in their area.</p>
                     <p>The directory provides information about greenhouse location, specialized products, and customer reviews.</p>

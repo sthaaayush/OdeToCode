@@ -14,7 +14,7 @@
             <a href="accessRegister.html"><h4>SIGN UP</h4></a>
         </div>
 
-        <video autoplay loop muted src="video_bg.mp4" ></video>
+        <video id="blur-video" autoplay loop muted src="video_bg.mp4" ></video>
 
         <section class="login">
             <div class="login-box">
