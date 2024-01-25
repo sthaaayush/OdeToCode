@@ -1,6 +1,8 @@
 # 1. Title: Going Green
 
 ## 2. Description:
+![Uploading image.png…]()
+
 
 "Going Green" aims to build, grow, and promote more greenhouse products while providing essential information, training, and services related to greenhouse farming. Our website will serve as a prime information platform, catering to normal viewers, aspiring greenhouse business owners, and existing businesses looking to expand. We also offer timely maintenance services to existing greenhouse businesses.
 
